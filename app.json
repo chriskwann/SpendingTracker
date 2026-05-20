@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SpendingTracker",
-    "slug": "SpendingTracker",
+    "slug": "spendingtracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,30 +19,46 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.christopherkwansorganization.spendingtracker"
     },
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router",
+          "expo-router",
+          [
+            "expo-splash-screen",
+            {
+              "image": "./assets/images/splash-icon.png",
+              "imageWidth": 200,
+              "resizeMode": "contain",
+              "backgroundColor": "#ffffff",
+              "dark": {
+                "backgroundColor": "#000000"
+              }
+            }
+          ],
       [
-        "expo-splash-screen",
+        "expo-notifications",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
+          "icon": "./assets/images/icon.png",
+          "color": "#1a1a2e",
+          "sounds": []
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "036b537c-4ce2-40ec-ba25-a4008e9914c0"
+      }
+    },
+    "owner": "christopherkwans-organization"
   }
 }
