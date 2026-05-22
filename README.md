@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# 💸 SpendingTracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile app to track your daily expenses, built with React Native and Expo.
 
-## Get started
+## Features
 
-1. Install dependencies
+- ➕ **Add Expenses** — quickly log what you spent with a category and note
+- ✏️ **Edit & Delete** — tap any expense to edit, long press to delete
+- 📅 **Filter by Date** — view expenses by Today, This Week, This Month, or All
+- 💰 **Budget Limit** — set a monthly budget and get warned when you're close
+- 📊 **Charts** — see your spending breakdown by category and last 7 days
+- 📤 **Export to Excel** — share your spending report via WhatsApp, email, etc.
+- 🔔 **Notification Shortcut** — tap the persistent notification to quickly log an expense
 
-   ```bash
-   npm install
-   ```
+## Categories
 
-2. Start the app
+- 🍔 Food
+- 🎮 Entertainment
+- 🛍️ Shopping
+- 🚗 Transport
+- 📦 Others
 
-   ```bash
-   npx expo start
-   ```
+## How to Use
 
-In the output, you'll find options to open the app in a
+### Adding an Expense
+1. Tap the **+** button at the bottom right
+2. Enter the amount in RM
+3. Add an optional note
+4. Select a category
+5. Tap **Save Expense**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Editing an Expense
+- Tap any expense in the list to edit it
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Deleting an Expense
+- Long press any expense to delete it
 
-## Get a fresh project
+### Setting a Budget
+1. Tap the **💰 Budget** button at the top right
+2. Enter your monthly budget in RM
+3. A progress bar will show how much you've used
+4. You'll get a warning at 80% and when exceeded
 
-When you're ready, run:
+### Exporting to Excel
+1. Tap the **📤 Export** button at the top right
+2. Choose where to share (WhatsApp, email, etc.)
 
-```bash
-npm run reset-project
-```
+### Notification Shortcut
+- A persistent notification stays in your notification bar
+- Tap **➕ Log Expense** to quickly log without opening the app
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Installation (Android)
 
-## Learn more
+1. Download the latest APK from the releases section
+2. Enable "Install from unknown sources" on your Android phone
+3. Install the APK
+4. Open the app and allow notification permission
 
-To learn more about developing your project with Expo, look at the following resources:
+## Built With
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [React Native](https://reactnative.dev)
+- [Expo](https://expo.dev)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
+- [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)
+- [react-native-chart-kit](https://github.com/indiespirit/react-native-chart-kit)
+- [SheetJS](https://sheetjs.com)
 
-## Join the community
+## Developer
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Made by Christopher Kwan
