@@ -1,0 +1,70 @@
+# 💸 SpendingTracker
+
+A mobile app to track your daily expenses, built with React Native and Expo.
+
+## Features
+
+- ➕ **Add Expenses** — quickly log what you spent with a category and note
+- ✏️ **Edit & Delete** — tap any expense to edit, long press to delete
+- 📅 **Filter by Date** — view expenses by Today, This Week, This Month, or All
+- 💰 **Budget Limit** — set a monthly budget and get warned when you're close
+- 📊 **Charts** — see your spending breakdown by category and last 7 days
+- 📤 **Export to Excel** — share your spending report via WhatsApp, email, etc.
+- 🔔 **Notification Shortcut** — tap the persistent notification to quickly log an expense
+
+## Categories
+
+- 🍔 Food
+- 🎮 Entertainment
+- 🛍️ Shopping
+- 🚗 Transport
+- 📦 Others
+
+## How to Use
+
+### Adding an Expense
+1. Tap the **+** button at the bottom right
+2. Enter the amount in RM
+3. Add an optional note
+4. Select a category
+5. Tap **Save Expense**
+
+### Editing an Expense
+- Tap any expense in the list to edit it
+
+### Deleting an Expense
+- Long press any expense to delete it
+
+### Setting a Budget
+1. Tap the **💰 Budget** button at the top right
+2. Enter your monthly budget in RM
+3. A progress bar will show how much you've used
+4. You'll get a warning at 80% and when exceeded
+
+### Exporting to Excel
+1. Tap the **📤 Export** button at the top right
+2. Choose where to share (WhatsApp, email, etc.)
+
+### Notification Shortcut
+- A persistent notification stays in your notification bar
+- Tap **➕ Log Expense** to quickly log without opening the app
+
+## Installation (Android)
+
+1. Download the latest APK from the releases section
+2. Enable "Install from unknown sources" on your Android phone
+3. Install the APK
+4. Open the app and allow notification permission
+
+## Built With
+
+- [React Native](https://reactnative.dev)
+- [Expo](https://expo.dev)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
+- [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)
+- [react-native-chart-kit](https://github.com/indiespirit/react-native-chart-kit)
+- [SheetJS](https://sheetjs.com)
+
+## Developer
+
+Made by Christopher Kwan
